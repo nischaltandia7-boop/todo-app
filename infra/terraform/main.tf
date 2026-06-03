@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 provider "aws" {
   region              = var.aws_region
   profile             = var.aws_profile != "" && var.aws_profile != "default" && var.aws_profile != "personal" ? var.aws_profile : null
@@ -8,7 +17,7 @@ provider "aws" {
 resource "aws_ecr_repository" "app_repo" {
   name                 = var.app_name
   image_tag_mutability = "MUTABLE"
-  force_destroy        = true
+  force_delete         = true
 }
 
 # --- Networking ---
