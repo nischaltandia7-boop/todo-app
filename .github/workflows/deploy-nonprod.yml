@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  AWS_REGION: "ap-south-1"
+  AWS_REGION: "us-east-1"
   ECR_REPOSITORY: "todo-app-nonprod"
   TF_VAR_FILE: "todo-app-nonprod/ap-south-1/todo-app-nonprod.tfvars"
   WORKING_DIR: "infra/terraform"

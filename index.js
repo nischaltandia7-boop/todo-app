@@ -7,6 +7,6 @@ app.get('/ping', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is runningss`);
+  console.log(`Server is running`);
   console.log(`App listening at http://localhost:${port}`);
 });
