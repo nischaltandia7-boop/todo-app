@@ -9,7 +9,7 @@ on:
 env:
   AWS_REGION: "us-east-1"
   ECR_REPOSITORY: "todo-app-nonprod"
-  TF_VAR_FILE: "todo-app-nonprod/us-east-1/todo-app-nonprod.tfvars"
+  TF_VAR_FILE: "todo-app-nonprod/ap-south-1/todo-app-nonprod.tfvars"
   WORKING_DIR: "infra/terraform"
 
 jobs:
