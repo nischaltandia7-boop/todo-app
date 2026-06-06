@@ -1,7 +1,6 @@
-app_name       = "todo-app-prod"
-aws_account_id = "222222222222" # REPLACE WITH YOUR PROD AWS ACCOUNT ID
+app_name       = "todo-app-nonprod"
+aws_account_id = "540547082805"
 aws_profile    = "personal"
 
-# You can uncomment and modify these if you want different settings for prod
-# aws_region = "us-east-1"
-# app_port   = 3000
+aws_region = "us-east-1"
+app_port   = 3000
